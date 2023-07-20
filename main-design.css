@@ -129,3 +129,35 @@ nav .sections ul .active {
   z-index: 99;
 }
 /* end section romantice films */
+
+/* start responsive */
+@media screen and (max-width: 676px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav .sections ul a {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+  nav .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .best-movies {
+    min-height: 80vh;
+    flex-wrap: wrap;
+  }
+  .best-movies .big-img {
+    height: auto;
+  }
+  .best-movies .big-img img {
+    width: 100%;
+    height: auto;
+  }
+  .best-movies .other-img img {
+    height: auto;
+    width: 160px;
+  }
+}
+/* end responsive */
