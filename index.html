@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aflamak</title>
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="main-design.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><span>A</span>flamak</div>
+        <div class="sections">
+          <ul>
+            <a href="#" class="active">الصفحه الرئيسية</a>
+            <a href="#">الرومانسي</a>
+            <a href="#">الاكشن</a>
+            <a href="#">الخيال العلمي</a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <h3
+      style="
+        font-size: 35px;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        background-color: orange;
+        padding: 7px;
+        border-radius: 20px;
+      "
+    >
+      قائمة الأفضل
+    </h3>
+    <section class="best-movies">
+      <div class="big-img">
+        <img src="movies image/Pete's Dragon.jpg" alt="" />
+      </div>
+      <div class="other-img">
+        <img src="movies image/Elemental.jpg" alt="" />
+        <img src="movies image/Avatar.jpg" alt="" />
+        <img src="movies image/Dora and the Lost City of Gold.jpg" alt="" />
+        <img src="romantice-image/Sponge on the Run.jpg" alt="" />
+        <img src="movies image/Mummies.jpg" alt="" />
+        <img src="movies image/Night At The Museum.jpg" alt="" />
+        <img src="movies image/The Little Mermaid.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="romantice">
+      <h3>أفلام رمانسية</h3>
+      <div class="autoplay" id="auto-romantice"></div>
+    </section>
+    <script src="main.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(".autoplay").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    </script>
+  </body>
+</html>

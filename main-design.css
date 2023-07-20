@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #222121;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+/* start header */
+header {
+  width: 100%;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+  backdrop-filter: blur(8px);
+}
+nav .logo {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: cursive;
+}
+nav .logo span {
+  color: orange;
+}
+nav .sections {
+  padding: 10px;
+}
+nav .sections ul {
+  list-style: none;
+  direction: rtl;
+}
+nav .sections ul a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 12px;
+  font-family: cursive;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+}
+nav .sections ul a:hover {
+  color: orange;
+}
+nav .sections ul .active {
+  color: orange;
+}
+/* end header */
+/*start best moviee */
+.best-movies {
+  /* display: inline-grid;
+  height: 50vh;
+  gap: 20px;
+  width: 100%; */
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+}
+.best-movies .big-img {
+  height: 100%;
+}
+.best-movies .big-img img {
+  height: 80vh;
+  width: 745px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.best-movies .other-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.best-movies .other-img img {
+  width: 330px;
+  height: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.best-movies .other-img img:last-child {
+  width: 100%;
+}
+/*end best moviee */
+/* start section romantice films */
+.romantice {
+  margin-top: 200px;
+}
+.romantice h3 {
+  font-size: 35px;
+  color: #ffffff;
+  background-color: orange;
+  padding: 7px;
+  text-align: center;
+  border-radius: 20px;
+}
+.autoplay {
+  margin-top: 30px;
+}
+.autoplay .romantice-card {
+  width: 350px;
+  height: 250px;
+  margin: 15px;
+}
+.autoplay .romantice-card a {
+  text-decoration: none;
+}
+.autoplay .romantice-card img {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+}
+.slick-next {
+  right: -15px;
+  width: 40px;
+  height: 40px;
+}
+.slick-prev {
+  left: -9px;
+  z-index: 99;
+}
+/* end section romantice films */
